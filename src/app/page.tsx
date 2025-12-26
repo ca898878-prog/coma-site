@@ -1,65 +1,62 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-           Test this baby girl 
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            This is not working {" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <main className="min-h-screen">
+      {/* HERO */}
+      <section className="bg-gray-100 px-6 py-24 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold">
+          Central Ohio Malayalee Association
+        </h1>
+        <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Connecting Malayalees across Central Ohio through culture, service, and community.
+        </p>
+
+        <div className="mt-8 flex justify-center gap-4">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/get-involved/membership"
+            className="rounded bg-black px-6 py-3 text-white"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Join Now
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/events"
+            className="rounded border border-black px-6 py-3"
           >
-            Documentation
+            Upcoming Events
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* QUICK LINKS */}
+      <section className="px-6 py-16 max-w-6xl mx-auto grid gap-6 md:grid-cols-3">
+        <div className="rounded border p-6 text-center">
+          <h3 className="text-xl font-semibold">🎉 Next Event</h3>
+          <p className="mt-2 text-gray-600">Onam 2025</p>
+        </div>
+
+        <div className="rounded border p-6 text-center">
+          <h3 className="text-xl font-semibold">📰 Newsletter</h3>
+          <p className="mt-2 text-gray-600">Latest community updates</p>
+        </div>
+
+        <div className="rounded border p-6 text-center">
+          <h3 className="text-xl font-semibold">🤝 Get Involved</h3>
+          <p className="mt-2 text-gray-600">Membership & volunteering</p>
+        </div>
+      </section>
+
+      {/* FEATURED EVENT */}
+      <section className="bg-gray-50 px-6 py-20 text-center">
+        <h2 className="text-3xl font-bold">Upcoming Event</h2>
+        <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+          Join us for our upcoming cultural celebrations and community gatherings.
+        </p>
+        <a
+          href="/events"
+          className="inline-block mt-6 rounded bg-black px-6 py-3 text-white"
+        >
+          View Event Details
+        </a>
+      </section>
+    </main>
   );
 }
