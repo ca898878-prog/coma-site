@@ -1,18 +1,46 @@
+import Link from "next/link";
+
 export default function FeaturedEvent() {
   return (
-    <section className="bg-gray-50 px-6 py-20 text-center">
-      <h2 className="text-3xl font-bold">Upcoming Event</h2>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-3xl font-serif text-emerald-900 mb-2">
+          Coming Up Next
+        </h2>
+        <p className="text-gray-600 mb-10">
+          Don’t miss our next community gathering.
+        </p>
 
-      <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-        Join us for our upcoming cultural celebrations and community gatherings.
-      </p>
+        <div className="rounded-2xl border border-emerald-100 bg-[#FAFAF8] p-8 md:flex md:items-center md:justify-between gap-8 shadow-sm">
+          <div>
+            <p className="text-amber-500 font-semibold mb-2">🌼 Featured Event</p>
+            <h3 className="text-2xl font-serif text-emerald-900 mb-2">
+              Onam 2025
+            </h3>
+            <p className="text-gray-700 mb-2">
+              A celebration of harvest, tradition, and togetherness.
+            </p>
+            <p className="text-sm text-gray-500">
+              September 14, 2025 • Columbus, OH
+            </p>
+          </div>
 
-      <a
-        href="/events"
-        className="inline-block mt-6 rounded bg-black px-6 py-3 text-white"
-      >
-        View Event Details
-      </a>
+          <div className="flex gap-4 mt-6 md:mt-0">
+            <Link
+              href="/events/onam-2025"
+              className="bg-emerald-800 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition"
+            >
+              View Details
+            </Link>
+            <Link
+              href="/events/onam-2025/tickets"
+              className="border border-emerald-800 text-emerald-800 px-6 py-3 rounded-full hover:bg-emerald-50 transition"
+            >
+              Tickets
+            </Link>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
