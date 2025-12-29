@@ -11,11 +11,6 @@ export type Person = {
 };
 
 
-export type Sponsor = {
-  name: string;
-  logoSrc?: string;
-  href?: string;
-};
 
 export const EXECUTIVE_COMMITTEE: Person[] = [
   {
@@ -197,8 +192,67 @@ export const IMPORTANT_LINKS = [
   { label: "Nonprofit Documents", href: "/docs/nonprofit-docs" },
 ];
 
-export const SPONSORS: Sponsor[] = [];
-// src/data/about.ts
+export type Sponsor = {
+  name: string;
+  logoUrl: string;
+  href?: string;
+  tier?: "Platinum" | "Gold" | "Silver" | "Bronze" | "Community";
+};
+
+export const SPONSORS: Sponsor[] = [
+  {
+    name: "Grange Insurance",
+    tier: "Platinum",
+    logoUrl: "/images/sponsors/grange-insurance.png",
+    href: "https://www.grangeinsurance.com",
+  },
+  {
+    name: "India Grocers",
+    tier: "Silver",
+    logoUrl: "/images/sponsors/india-grocers-silver.png",
+    // href: "https://...", // optional
+  },
+  {
+    name: "New York Life",
+    tier: "Gold",
+    logoUrl: "/images/sponsors/new-york-life.png",
+  },
+  {
+    name: "Dev Care Solutions",
+    tier: "Gold",
+    logoUrl: "/images/sponsors/dev-care-solutions.jpg",
+  },
+  {
+    name: "Bhavani",
+    tier: "Bronze",
+    logoUrl: "/images/sponsors/bhavani.png",
+  },
+  {
+    name: "Sony Joseph",
+    tier: "Community",
+    logoUrl: "/images/sponsors/sony-joseph.jpg",
+  },
+  {
+    name: "Abraham Eappen",
+    tier: "Community",
+    logoUrl: "/images/sponsors/abraham-eappen.png",
+  },
+  {
+    name: "Awadh",
+    tier: "Community",
+    logoUrl: "/images/sponsors/awadh.jpg",
+  },
+  {
+    name: "Courtney Eaglin",
+    tier: "Community",
+    logoUrl: "/images/sponsors/courtney-eaglin.jpg",
+  },
+   {
+    name: "Best Brains",
+    tier: "Community",
+    logoUrl: "/images/sponsors/best-brains.jpg",
+  },
+];
 
 export const TRUSTEES: Person[] = [
   {

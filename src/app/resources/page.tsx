@@ -75,17 +75,17 @@ const communityLinks: CommunityLink[] = [
   {
     title: "Facebook",
     description: "Community updates, posts, and event announcements.",
-    href: "#",
+    href: "https://www.facebook.com/coma.ohio/",
   },
   {
     title: "YouTube",
     description: "Event highlights and performance videos.",
-    href: "#",
+    href: "https://www.youtube.com/user/comacmh/playlists",
   },
   {
     title: "WhatsApp Announcements",
     description: "Fast updates and reminders (link shared upon request).",
-    href: "#",
+    href: "https://chat.whatsapp.com/DVq11LkFSEs5eESNgDA6VM",
   },
 ];
 
@@ -209,13 +209,10 @@ export default function ResourcesPage() {
             </div>
           </div>
 
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            className="rounded bg-black px-5 py-2.5 text-white text-sm"
-          >
-            Go to Directory (portal)
-          </a>
+          <Link href="/contact" className="text-sm underline">
+           = Request access to the member directory →
+          </Link>
+
         </div>
       </section>
 

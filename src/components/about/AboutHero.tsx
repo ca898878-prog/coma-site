@@ -27,9 +27,11 @@ export default function AboutHero() {
             </h1>
 
             <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-              COMA is a volunteer-driven community organization dedicated to celebrating Malayalee
-              heritage, strengthening local connections, and serving Central Ohio through cultural
-              programming and community outreach.
+              COMA (Central Ohio Malayalee Association) is a non-profit association run by Malayalees for Malayalees in 
+              the Columbus metropolitan area. Malayalees hail from the beautiful coastal
+              state of Kerala in India. The Central Ohio Malayalee Association (COMA) was formally registered
+              as a “not for profit” organization in October 2007. COMA strives to bring Central Ohio Malayalees
+              together and also organizes various cultural and seasonal events throughout the year.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
