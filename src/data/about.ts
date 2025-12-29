@@ -229,12 +229,12 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     name: "Sony Joseph",
-    tier: "Community",
+    tier: "Platinum",
     logoUrl: "/images/sponsors/sony-joseph.jpg",
   },
   {
     name: "Abraham Eappen",
-    tier: "Community",
+    tier: "Gold",
     logoUrl: "/images/sponsors/abraham-eappen.png",
   },
   {
