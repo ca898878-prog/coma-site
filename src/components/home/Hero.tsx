@@ -14,7 +14,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="/get-involved/membership"
+            href="/membership"
             className="bg-amber-400 hover:bg-amber-300 text-emerald-900 font-semibold px-8 py-3 rounded-full transition"
           >
             Join COMA
