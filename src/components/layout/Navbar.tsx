@@ -13,6 +13,7 @@ export default function Navbar() {
           <Link href="/events">Events & Media</Link>
           <Link href="/get-involved">Get Involved</Link>
           <Link href="/resources">Resources</Link>
+          <Link href="/newsletters">Newsletters</Link>
           <Link href="/contact">Contact</Link>
         </div>
 
