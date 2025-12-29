@@ -82,7 +82,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/get-involved/membership"
+              href="/membership"
               onClick={() => setOpen(false)}
               className="mt-2 rounded bg-black px-4 py-3 text-white text-sm font-semibold text-center"
             >
