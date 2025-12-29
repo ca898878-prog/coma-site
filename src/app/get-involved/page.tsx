@@ -156,14 +156,6 @@ export default function GetInvolvedPage() {
           {/* Pookalam-ish pattern wash */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.55]"
-            style={{
-              backgroundImage: `
-                radial-gradient(circle at 18% 30%, rgba(201,162,39,0.18), transparent 40%),
-                radial-gradient(circle at 82% 35%, rgba(11,93,59,0.10), transparent 42%),
-                radial-gradient(circle at 55% 80%, rgba(201,162,39,0.12), transparent 45%),
-                linear-gradient(135deg, rgba(11,93,59,0.05), rgba(201,162,39,0.04))
-              `,
-            }}
           />
           {/* Kasavu stripe */}
           <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#C9A227] via-[#F3E6A1] to-[#C9A227]" />
@@ -201,7 +193,7 @@ export default function GetInvolvedPage() {
         {/* Impact strip */}
         <div className="mt-10 relative overflow-hidden rounded-3xl bg-white p-6 shadow-sm ring-1 ring-black/5">
           <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#0B5D3B] via-[#C9A227] to-[#0B5D3B]" />
-          <div className="pointer-events-none absolute -left-24 -bottom-24 h-56 w-56 rounded-full bg-[#C9A227]/15 blur-2xl" />
+          
 
           <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>

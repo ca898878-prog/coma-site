@@ -113,14 +113,7 @@ export default function GivingBackPage() {
           {/* Pookalam-ish wash */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.55]"
-            style={{
-              backgroundImage: `
-                radial-gradient(circle at 15% 25%, rgba(201,162,39,0.18), transparent 40%),
-                radial-gradient(circle at 85% 30%, rgba(11,93,59,0.10), transparent 42%),
-                radial-gradient(circle at 55% 85%, rgba(201,162,39,0.12), transparent 45%),
-                linear-gradient(135deg, rgba(11,93,59,0.05), rgba(201,162,39,0.04))
-              `,
-            }}
+           
           />
           {/* Kasavu stripe */}
           <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#C9A227] via-[#F3E6A1] to-[#C9A227]" />

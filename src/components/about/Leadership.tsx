@@ -1,7 +1,5 @@
-// src/components/about/Leadership.tsx
 import type { Person } from "../../data/about";
 import PersonCard from "./PersonCard";
-
 
 function CommitteeBlock({
   title,
@@ -16,24 +14,35 @@ function CommitteeBlock({
   subtitle?: string;
   columns?: string;
 }) {
+  const accent =
+    variant === "exec"
+      ? "from-[#0B5D3B] via-[#C9A227] to-[#0B5D3B]"
+      : "from-[#C9A227] via-[#F3E6A1] to-[#C9A227]";
+
   return (
-    <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+    <div className="group relative overflow-hidden rounded-[28px] bg-white p-5 shadow-sm ring-1 ring-black/5 sm:p-6">
+      {/* Kasavu stripe */}
+      <div className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${accent}`} />
+
+  
       {/* Header */}
-      <div className="flex items-start justify-between gap-3">
+      <div className="relative flex items-start justify-between gap-3">
         <div>
-          <h3 className="text-base font-semibold text-slate-900">{title}</h3>
+          <h3 className="text-base font-semibold text-slate-900 group-hover:text-[#0B5D3B] transition">
+            {title}
+          </h3>
           {subtitle && (
-            <p className="mt-1 text-sm text-slate-700">{subtitle}</p>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600">{subtitle}</p>
           )}
         </div>
 
-        <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+        <span className="shrink-0 rounded-full bg-[#0B5D3B]/10 px-2.5 py-1 text-xs font-semibold text-[#0B5D3B] ring-1 ring-[#0B5D3B]/15">
           {people.length} {people.length === 1 ? "member" : "members"}
         </span>
       </div>
 
       {/* Cards */}
-      <div className={`mt-4 grid gap-4 ${columns}`}>
+      <div className={`relative mt-4 grid gap-4 ${columns}`}>
         {people.map((person) => (
           <PersonCard
             key={`${title}-${person.name}`}
@@ -57,14 +66,14 @@ export default function Leadership({
 }) {
   return (
     <div className="space-y-6">
-      {/* Executive + Trustees side by side (1 col each) */}
+      {/* Executive + Trustees side by side */}
       <div className="grid gap-6 lg:grid-cols-2">
         <CommitteeBlock
           title="Executive Committee"
           subtitle="Volunteer leaders guiding COMA’s year-to-year direction and programming."
           people={executive}
           variant="exec"
-          // 👈 no columns prop = 1 column
+          // 1 column by default
         />
 
         <CommitteeBlock
@@ -72,11 +81,11 @@ export default function Leadership({
           subtitle="Governance, continuity, and oversight supporting COMA’s mission."
           people={trustees}
           variant="general"
-          // 👈 also 1 column
+          // 1 column by default
         />
       </div>
 
-      {/* General Committee – 2 columns */}
+      {/* General Committee */}
       <CommitteeBlock
         title="General Committee"
         subtitle="Committee leads and volunteers powering events, youth programs, and community initiatives."

@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           {/* Desktop Join */}
           <Link
-            href="/get-involved/membership"
+            href="/membership"
             className="hidden md:inline-flex rounded bg-black px-4 py-2 text-white text-sm font-semibold"
           >
             Join
