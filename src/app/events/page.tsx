@@ -196,7 +196,7 @@ export default function EventsPage() {
               Browse albums from recent events.
             </p>
             <a
-              href="#"
+              href="https://photos.app.goo.gl/MFMSvFpfDin34y9d9"
               className="mt-4 inline-block text-sm underline"
               onClick={(ev) => ev.preventDefault()}
             >
@@ -210,7 +210,7 @@ export default function EventsPage() {
               Watch performances and highlights.
             </p>
             <a
-              href="#"
+              href="https://www.youtube.com/user/comacmh"
               className="mt-4 inline-block text-sm underline"
               onClick={(ev) => ev.preventDefault()}
             >
@@ -224,7 +224,7 @@ export default function EventsPage() {
               Facebook + WhatsApp links for announcements.
             </p>
             <a
-              href="#"
+              href="https://chat.whatsapp.com/DVq11LkFSEs5eESNgDA6VM"
               className="mt-4 inline-block text-sm underline"
               onClick={(ev) => ev.preventDefault()}
             >

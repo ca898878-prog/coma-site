@@ -146,39 +146,14 @@ export default function ResourcesPage() {
       <section className="mt-16">
         <div className="flex items-end justify-between gap-4 flex-wrap">
           <h2 className="text-2xl font-semibold">Sponsors</h2>
-          <Link href="/about" className="text-sm underline">
+          <Link href="/Sponsors" className="text-sm underline">
             Sponsor showcase →
           </Link>
         </div>
 
         <p className="mt-2 text-gray-600 max-w-2xl">
-          A reference list of sponsors supporting COMA. Full sponsor logos and highlights are on the About page.
+          A reference list of sponsors supporting COMA. Full sponsor logos and highlights are on the Sponsors page.
         </p>
-
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {sponsorRefs.map((s) => (
-            <div key={s.name} className="rounded-xl border p-5">
-              <div className="flex items-center justify-between gap-3">
-                <div className="font-semibold">{s.name}</div>
-                {s.tier && (
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full border bg-white">
-                    {s.tier}
-                  </span>
-                )}
-              </div>
-
-              <div className="mt-4">
-                {s.href && s.href !== "#" ? (
-                  <a className="text-sm underline" href={s.href} target="_blank" rel="noreferrer">
-                    Visit website →
-                  </a>
-                ) : (
-                  <span className="text-sm text-gray-400">Website coming soon</span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
 
         <div className="mt-8 rounded-xl bg-gray-50 p-6">
           <h3 className="font-semibold">Become a sponsor</h3>

@@ -32,12 +32,6 @@ export default function FeaturedEvent() {
             >
               View Details
             </Link>
-            <Link
-              href="/events/onam-2025/tickets"
-              className="border border-emerald-800 text-emerald-800 px-6 py-3 rounded-full hover:bg-emerald-50 transition"
-            >
-              Tickets
-            </Link>
           </div>
         </div>
       </div>

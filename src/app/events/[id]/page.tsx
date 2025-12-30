@@ -201,7 +201,7 @@ export default function EventDetailPage() {
               <div className="font-semibold">📸 Photos</div>
               <p className="mt-2 text-sm text-gray-600">
                 {event.galleryUrl ? (
-                  <a className="underline" href={event.galleryUrl} target="_blank" rel="noreferrer">
+                  <a className="underline" href='https://photos.app.goo.gl/MFMSvFpfDin34y9d9' target="_blank" rel="noreferrer">
                     View photo album →
                   </a>
                 ) : (
@@ -214,7 +214,7 @@ export default function EventDetailPage() {
               <div className="font-semibold">🎥 Video</div>
               <p className="mt-2 text-sm text-gray-600">
                 {event.youtubeUrl ? (
-                  <a className="underline" href={event.youtubeUrl} target="_blank" rel="noreferrer">
+                  <a className="underline" href='https://www.youtube.com/user/comacmh' target="_blank" rel="noreferrer">
                     Watch highlights →
                   </a>
                 ) : (

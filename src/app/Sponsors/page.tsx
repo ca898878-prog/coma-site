@@ -1,8 +1,8 @@
 // app/sponsors/page.tsx
 import Link from "next/link";
-import { SPONSORS } from "@/data/about";
-import type { Sponsor } from "@/data/about";
-import SponsorTile from "@/components/about/SponsorTitle"; // <-- make sure this path+filename is correct
+import { SPONSORS } from "../../data/about";
+import type { Sponsor } from "../../data/about";
+import SponsorTile from "../../components/about/SponsorTitle"; // <-- make sure this path+filename is correct
 
 const sponsorEmail = "coma.officials@gmail.com";
 
@@ -90,7 +90,7 @@ function groupSponsors(sponsors: Sponsor[]) {
   };
 
   for (const s of sponsors) {
-    grouped[normalizeTier((s as Sponsor).tier)].push(s);
+    grouped[normalizeTier(s.tier)].push(s);
   }
 
   (Object.keys(grouped) as SponsorTier[]).forEach((k) =>
